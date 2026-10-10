@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ThemeScript } from "@/components/theme/theme-script";
 import { ToastProvider } from "@/components/ui/toast";
+import StoreProvider from "@/app/StoreProvider";
 
 export const metadata: Metadata = {
   title: "Next Theme — Reusable UI Foundation",
@@ -21,7 +22,9 @@ export default function AppLayout({ children }: Readonly<{ children: React.React
       <body>
         <ThemeScript />
         <ThemeProvider>
-          <ToastProvider>{children}</ToastProvider>
+          <StoreProvider>
+            <ToastProvider>{children}</ToastProvider>
+          </StoreProvider>
         </ThemeProvider>
       </body>
     </html>

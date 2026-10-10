@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, type HTMLAttributes, type ReactNode } from "react";
+import { ButtonHTMLAttributes, ComponentProps, createContext, useContext, useState, type HTMLAttributes, type ReactNode } from "react";
 import Link from "next/link";
 import { ChevronDown, PanelLeftClose, PanelLeftOpen, X } from "lucide-react";
 import { cn } from "@/lib/cn";

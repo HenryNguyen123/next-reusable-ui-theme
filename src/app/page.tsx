@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Check, Code2, Layers3, Palette, Sparkles } from "lucide-react";
 import { Badge, Button, Card, CardContent, CardDescription, CardHeader, CardTitle, Container, Grid, Navbar, NavbarActions, NavbarItem, NavbarLogo, NavbarMenu, NavbarMobileTrigger, MobileNavbar, Section, Stack } from "@/components/ui";
 import { navigationItems } from "@/lib/constants";
+import Counter from "@/components/counter/Counter";
 
 const features = [
   { title: "Token-driven", description: "Semantic CSS variables keep color, radius, shadow, typography, and density centralized.", icon: Palette },
@@ -37,6 +38,9 @@ export default function HomePage() {
           <Container>
             <div className="mx-auto max-w-4xl text-center">
               <Badge variant="primary">Reusable Next.js UI Foundation</Badge>
+              {/* <div>
+                <Counter/>
+              </div> */}
               <h1 className="mt-5 text-balance text-4xl font-bold tracking-tight sm:text-6xl">Build many products from one consistent visual foundation.</h1>
               <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">A theme-first system for blogs, SaaS apps, admin panels, e-commerce, CMS, social products, and landing pages—without business-specific coupling.</p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
